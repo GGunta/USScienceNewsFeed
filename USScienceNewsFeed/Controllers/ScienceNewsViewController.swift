@@ -132,6 +132,21 @@ extension ScienceNewsViewController: UITableViewDelegate, UITableViewDataSource{
         return 120
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+        guard let vc = storyboard.instantiateViewController(identifier: "ArticleDetailViewController") as? ArticleDetailViewController else {
+            return
+        }
+        
+        let item = items[indexPath.row]
+        vc.contentString = item.description
+        vc.titleString = item.title
+        vc.webURLString = item.url
+        vc.newsImage = item.image
+        
+        navigationController?.pushViewController(vc, animated: true)
+    }
     
 }
     
