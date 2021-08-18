@@ -62,5 +62,11 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Karma-Medium.ttf</string>
+		<string>Karma-Bold.ttf</string>
+		<string>Karma-SemiBold.ttf</string>
+	</array>
 </dict>
 </plist>

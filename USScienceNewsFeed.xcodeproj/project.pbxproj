@@ -3,29 +3,42 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		8DD5CA4726CBB8D600D3FCFF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD5CA4626CBB8D600D3FCFF /* AppDelegate.swift */; };
 		8DD5CA4926CBB8D600D3FCFF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD5CA4826CBB8D600D3FCFF /* SceneDelegate.swift */; };
-		8DD5CA4B26CBB8D600D3FCFF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD5CA4A26CBB8D600D3FCFF /* ViewController.swift */; };
+		8DD5CA4B26CBB8D600D3FCFF /* ScienceNewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD5CA4A26CBB8D600D3FCFF /* ScienceNewsViewController.swift */; };
 		8DD5CA4E26CBB8D600D3FCFF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DD5CA4C26CBB8D600D3FCFF /* Main.storyboard */; };
 		8DD5CA5126CBB8D600D3FCFF /* USScienceNewsFeed.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8DD5CA4F26CBB8D600D3FCFF /* USScienceNewsFeed.xcdatamodeld */; };
 		8DD5CA5326CBB8D900D3FCFF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DD5CA5226CBB8D900D3FCFF /* Assets.xcassets */; };
 		8DD5CA5626CBB8D900D3FCFF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DD5CA5426CBB8D900D3FCFF /* LaunchScreen.storyboard */; };
+		8DD5CA6326CBB9A200D3FCFF /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD5CA6226CBB9A200D3FCFF /* Alert.swift */; };
+		8DD5CA6526CBBF4400D3FCFF /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD5CA6426CBBF4400D3FCFF /* NewsTableViewCell.swift */; };
+		8DD5CA6726CBC24900D3FCFF /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD5CA6626CBC24900D3FCFF /* Item.swift */; };
+		8DD5CA6A26CBC2AE00D3FCFF /* Gloss in Frameworks */ = {isa = PBXBuildFile; productRef = 8DD5CA6926CBC2AE00D3FCFF /* Gloss */; };
+		8DD5CA7126CBD77D00D3FCFF /* Karma-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8DD5CA7026CBD77D00D3FCFF /* Karma-SemiBold.ttf */; };
+		8DD5CA7326CBD78E00D3FCFF /* Karma-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8DD5CA7226CBD78D00D3FCFF /* Karma-Bold.ttf */; };
+		8DD5CA7526CBD79500D3FCFF /* Karma-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8DD5CA7426CBD79500D3FCFF /* Karma-Medium.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8DD5CA4326CBB8D600D3FCFF /* USScienceNewsFeed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = USScienceNewsFeed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DD5CA4626CBB8D600D3FCFF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8DD5CA4826CBB8D600D3FCFF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8DD5CA4A26CBB8D600D3FCFF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8DD5CA4A26CBB8D600D3FCFF /* ScienceNewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScienceNewsViewController.swift; sourceTree = "<group>"; };
 		8DD5CA4D26CBB8D600D3FCFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8DD5CA5026CBB8D600D3FCFF /* USScienceNewsFeed.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = USScienceNewsFeed.xcdatamodel; sourceTree = "<group>"; };
 		8DD5CA5226CBB8D900D3FCFF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8DD5CA5526CBB8D900D3FCFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8DD5CA5726CBB8D900D3FCFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8DD5CA6226CBB9A200D3FCFF /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		8DD5CA6426CBBF4400D3FCFF /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
+		8DD5CA6626CBC24900D3FCFF /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		8DD5CA7026CBD77D00D3FCFF /* Karma-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Karma-SemiBold.ttf"; sourceTree = "<group>"; };
+		8DD5CA7226CBD78D00D3FCFF /* Karma-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Karma-Bold.ttf"; sourceTree = "<group>"; };
+		8DD5CA7426CBD79500D3FCFF /* Karma-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Karma-Medium.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8DD5CA6A26CBC2AE00D3FCFF /* Gloss in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,16 +72,70 @@
 		8DD5CA4526CBB8D600D3FCFF /* USScienceNewsFeed */ = {
 			isa = PBXGroup;
 			children = (
-				8DD5CA4626CBB8D600D3FCFF /* AppDelegate.swift */,
-				8DD5CA4826CBB8D600D3FCFF /* SceneDelegate.swift */,
-				8DD5CA4A26CBB8D600D3FCFF /* ViewController.swift */,
-				8DD5CA4C26CBB8D600D3FCFF /* Main.storyboard */,
+				8DD5CA6B26CBD65200D3FCFF /* ExtraResources */,
+				8DD5CA6126CBB97C00D3FCFF /* Extension */,
+				8DD5CA5D26CBB8F800D3FCFF /* AppDelegate */,
+				8DD5CA6026CBB94300D3FCFF /* Model */,
+				8DD5CA5F26CBB90900D3FCFF /* View */,
+				8DD5CA5E26CBB90200D3FCFF /* Controllers */,
 				8DD5CA5226CBB8D900D3FCFF /* Assets.xcassets */,
-				8DD5CA5426CBB8D900D3FCFF /* LaunchScreen.storyboard */,
 				8DD5CA5726CBB8D900D3FCFF /* Info.plist */,
 				8DD5CA4F26CBB8D600D3FCFF /* USScienceNewsFeed.xcdatamodeld */,
 			);
 			path = USScienceNewsFeed;
+			sourceTree = "<group>";
+		};
+		8DD5CA5D26CBB8F800D3FCFF /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				8DD5CA4626CBB8D600D3FCFF /* AppDelegate.swift */,
+				8DD5CA4826CBB8D600D3FCFF /* SceneDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		8DD5CA5E26CBB90200D3FCFF /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8DD5CA4A26CBB8D600D3FCFF /* ScienceNewsViewController.swift */,
+				8DD5CA6426CBBF4400D3FCFF /* NewsTableViewCell.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		8DD5CA5F26CBB90900D3FCFF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8DD5CA4C26CBB8D600D3FCFF /* Main.storyboard */,
+				8DD5CA5426CBB8D900D3FCFF /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8DD5CA6026CBB94300D3FCFF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8DD5CA6626CBC24900D3FCFF /* Item.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		8DD5CA6126CBB97C00D3FCFF /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				8DD5CA6226CBB9A200D3FCFF /* Alert.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		8DD5CA6B26CBD65200D3FCFF /* ExtraResources */ = {
+			isa = PBXGroup;
+			children = (
+				8DD5CA7426CBD79500D3FCFF /* Karma-Medium.ttf */,
+				8DD5CA7226CBD78D00D3FCFF /* Karma-Bold.ttf */,
+				8DD5CA7026CBD77D00D3FCFF /* Karma-SemiBold.ttf */,
+			);
+			name = ExtraResources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,6 +154,9 @@
 			dependencies = (
 			);
 			name = USScienceNewsFeed;
+			packageProductDependencies = (
+				8DD5CA6926CBC2AE00D3FCFF /* Gloss */,
+			);
 			productName = USScienceNewsFeed;
 			productReference = 8DD5CA4326CBB8D600D3FCFF /* USScienceNewsFeed.app */;
 			productType = "com.apple.product-type.application";
@@ -113,6 +184,9 @@
 				Base,
 			);
 			mainGroup = 8DD5CA3A26CBB8D600D3FCFF;
+			packageReferences = (
+				8DD5CA6826CBC2AE00D3FCFF /* XCRemoteSwiftPackageReference "Gloss" */,
+			);
 			productRefGroup = 8DD5CA4426CBB8D600D3FCFF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -128,7 +202,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				8DD5CA5626CBB8D900D3FCFF /* LaunchScreen.storyboard in Resources */,
+				8DD5CA7326CBD78E00D3FCFF /* Karma-Bold.ttf in Resources */,
+				8DD5CA7526CBD79500D3FCFF /* Karma-Medium.ttf in Resources */,
 				8DD5CA5326CBB8D900D3FCFF /* Assets.xcassets in Resources */,
+				8DD5CA7126CBD77D00D3FCFF /* Karma-SemiBold.ttf in Resources */,
 				8DD5CA4E26CBB8D600D3FCFF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -140,9 +217,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8DD5CA4B26CBB8D600D3FCFF /* ViewController.swift in Sources */,
+				8DD5CA4B26CBB8D600D3FCFF /* ScienceNewsViewController.swift in Sources */,
 				8DD5CA5126CBB8D600D3FCFF /* USScienceNewsFeed.xcdatamodeld in Sources */,
+				8DD5CA6526CBBF4400D3FCFF /* NewsTableViewCell.swift in Sources */,
 				8DD5CA4726CBB8D600D3FCFF /* AppDelegate.swift in Sources */,
+				8DD5CA6726CBC24900D3FCFF /* Item.swift in Sources */,
+				8DD5CA6326CBB9A200D3FCFF /* Alert.swift in Sources */,
 				8DD5CA4926CBB8D600D3FCFF /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -345,6 +425,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8DD5CA6826CBC2AE00D3FCFF /* XCRemoteSwiftPackageReference "Gloss" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hkellaway/Gloss.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.2.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8DD5CA6926CBC2AE00D3FCFF /* Gloss */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8DD5CA6826CBC2AE00D3FCFF /* XCRemoteSwiftPackageReference "Gloss" */;
+			productName = Gloss;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		8DD5CA4F26CBB8D600D3FCFF /* USScienceNewsFeed.xcdatamodeld */ = {
