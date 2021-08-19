@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D145E9B26CE3B38003FB969 /* AppearanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D145E9A26CE3B38003FB969 /* AppearanceViewController.swift */; };
 		8D5017AB26CCE914003A2252 /* ArticleDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5017AA26CCE914003A2252 /* ArticleDetailViewController.swift */; };
 		8D5017AD26CCF1F4003A2252 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5017AC26CCF1F4003A2252 /* WebViewController.swift */; };
 		8D5017AF26CCF895003A2252 /* SavedNewsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5017AE26CCF895003A2252 /* SavedNewsTableViewController.swift */; };
@@ -27,6 +28,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8D145E9A26CE3B38003FB969 /* AppearanceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppearanceViewController.swift; sourceTree = "<group>"; };
 		8D5017AA26CCE914003A2252 /* ArticleDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDetailViewController.swift; sourceTree = "<group>"; };
 		8D5017AC26CCF1F4003A2252 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		8D5017AE26CCF895003A2252 /* SavedNewsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedNewsTableViewController.swift; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 				8D5017AA26CCE914003A2252 /* ArticleDetailViewController.swift */,
 				8D5017AC26CCF1F4003A2252 /* WebViewController.swift */,
 				8D5017AE26CCF895003A2252 /* SavedNewsTableViewController.swift */,
+				8D145E9A26CE3B38003FB969 /* AppearanceViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -229,6 +232,7 @@
 				8DD5CA4B26CBB8D600D3FCFF /* ScienceNewsViewController.swift in Sources */,
 				8D5017AD26CCF1F4003A2252 /* WebViewController.swift in Sources */,
 				8DD5CA5126CBB8D600D3FCFF /* USScienceNewsFeed.xcdatamodeld in Sources */,
+				8D145E9B26CE3B38003FB969 /* AppearanceViewController.swift in Sources */,
 				8DD5CA6526CBBF4400D3FCFF /* NewsTableViewCell.swift in Sources */,
 				8D5017AF26CCF895003A2252 /* SavedNewsTableViewController.swift in Sources */,
 				8DD5CA4726CBB8D600D3FCFF /* AppDelegate.swift in Sources */,

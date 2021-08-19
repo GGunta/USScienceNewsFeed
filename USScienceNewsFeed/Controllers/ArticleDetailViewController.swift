@@ -28,8 +28,9 @@ class ArticleDetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        readFullArticleButton.layer.cornerRadius = 12
+        readFullArticleButton.layer.cornerRadius = 7
         readFullArticleButton.tintColor = .label
+        savedButton.layer.cornerRadius = 7
         self.title = "Article"
         
         titleLabel.text = titleString
