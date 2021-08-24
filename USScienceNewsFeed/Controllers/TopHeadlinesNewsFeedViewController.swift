@@ -8,7 +8,7 @@
 import UIKit
 import Gloss
 
-class ScienceNewsViewController: UIViewController {
+class TopHeadlinesNewsFeedViewController: UIViewController {
     
     var items: [Item] = []
     
@@ -18,7 +18,7 @@ class ScienceNewsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "US Science News"
+        self.title = "Top Headlines News Feed"
         activityIndicatorView.isHidden = true
     }
     
@@ -35,7 +35,7 @@ class ScienceNewsViewController: UIViewController {
     }
     
     @IBAction func infoBarItem(_ sender: Any) {
-        basicAlert(title: "Science News Feed Info", message: "Press plane to fetch US Science News Feed articles")
+        basicAlert(title: "Top Headlines News Feed Info", message: "Press plane to fetch US Top Headlines News Feed articles")
     }
     
     @IBAction func getDataTapped(_ sender: Any) {
@@ -45,7 +45,7 @@ class ScienceNewsViewController: UIViewController {
     }
     
     func handleGetData(){
-        let jsonUrl = "https://newsapi.org/v2/top-headlines?country=us&category=science&apiKey=b4987bb0a1f34bd7b684a8adbee1cb6a"
+        let jsonUrl = "https://newsapi.org/v2/top-headlines?country=us&apiKey=b4987bb0a1f34bd7b684a8adbee1cb6a"
         
         guard let url = URL(string: jsonUrl) else {return}
         
@@ -91,23 +91,17 @@ class ScienceNewsViewController: UIViewController {
             self.activityIndicator(animated: false)
             
         }
-        
-        
     }
-    
-    
 }
 
 
 //MARK: - UITableViewDelegate, UITableViewDataSource
-extension ScienceNewsViewController: UITableViewDelegate, UITableViewDataSource{
+extension TopHeadlinesNewsFeedViewController: UITableViewDelegate, UITableViewDataSource{
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return items.count
     }
-    
-    
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
@@ -123,7 +117,7 @@ extension ScienceNewsViewController: UITableViewDelegate, UITableViewDataSource{
             cell.newsImageView.image = image
         }
         let date = String(item.publishedAt.prefix(10))
-        self.title = "US Science News \(date)"
+        self.title = "Top News Headlines in US \(date)"
         
         return cell
     }

@@ -13,7 +13,7 @@
 		8D5017AF26CCF895003A2252 /* SavedNewsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5017AE26CCF895003A2252 /* SavedNewsTableViewController.swift */; };
 		8DD5CA4726CBB8D600D3FCFF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD5CA4626CBB8D600D3FCFF /* AppDelegate.swift */; };
 		8DD5CA4926CBB8D600D3FCFF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD5CA4826CBB8D600D3FCFF /* SceneDelegate.swift */; };
-		8DD5CA4B26CBB8D600D3FCFF /* ScienceNewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD5CA4A26CBB8D600D3FCFF /* ScienceNewsViewController.swift */; };
+		8DD5CA4B26CBB8D600D3FCFF /* TopHeadlinesNewsFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD5CA4A26CBB8D600D3FCFF /* TopHeadlinesNewsFeedViewController.swift */; };
 		8DD5CA4E26CBB8D600D3FCFF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DD5CA4C26CBB8D600D3FCFF /* Main.storyboard */; };
 		8DD5CA5126CBB8D600D3FCFF /* USScienceNewsFeed.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8DD5CA4F26CBB8D600D3FCFF /* USScienceNewsFeed.xcdatamodeld */; };
 		8DD5CA5326CBB8D900D3FCFF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DD5CA5226CBB8D900D3FCFF /* Assets.xcassets */; };
@@ -32,10 +32,10 @@
 		8D5017AA26CCE914003A2252 /* ArticleDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDetailViewController.swift; sourceTree = "<group>"; };
 		8D5017AC26CCF1F4003A2252 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		8D5017AE26CCF895003A2252 /* SavedNewsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedNewsTableViewController.swift; sourceTree = "<group>"; };
-		8DD5CA4326CBB8D600D3FCFF /* USScienceNewsFeed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = USScienceNewsFeed.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8DD5CA4326CBB8D600D3FCFF /* TopHeadlinesNewsFeed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TopHeadlinesNewsFeed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DD5CA4626CBB8D600D3FCFF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8DD5CA4826CBB8D600D3FCFF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8DD5CA4A26CBB8D600D3FCFF /* ScienceNewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScienceNewsViewController.swift; sourceTree = "<group>"; };
+		8DD5CA4A26CBB8D600D3FCFF /* TopHeadlinesNewsFeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopHeadlinesNewsFeedViewController.swift; sourceTree = "<group>"; };
 		8DD5CA4D26CBB8D600D3FCFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8DD5CA5026CBB8D600D3FCFF /* USScienceNewsFeed.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = USScienceNewsFeed.xcdatamodel; sourceTree = "<group>"; };
 		8DD5CA5226CBB8D900D3FCFF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -72,7 +72,7 @@
 		8DD5CA4426CBB8D600D3FCFF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8DD5CA4326CBB8D600D3FCFF /* USScienceNewsFeed.app */,
+				8DD5CA4326CBB8D600D3FCFF /* TopHeadlinesNewsFeed.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -105,7 +105,7 @@
 		8DD5CA5E26CBB90200D3FCFF /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				8DD5CA4A26CBB8D600D3FCFF /* ScienceNewsViewController.swift */,
+				8DD5CA4A26CBB8D600D3FCFF /* TopHeadlinesNewsFeedViewController.swift */,
 				8DD5CA6426CBBF4400D3FCFF /* NewsTableViewCell.swift */,
 				8D5017AA26CCE914003A2252 /* ArticleDetailViewController.swift */,
 				8D5017AC26CCF1F4003A2252 /* WebViewController.swift */,
@@ -153,9 +153,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8DD5CA4226CBB8D600D3FCFF /* USScienceNewsFeed */ = {
+		8DD5CA4226CBB8D600D3FCFF /* TopHeadlinesNewsFeed */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8DD5CA5A26CBB8D900D3FCFF /* Build configuration list for PBXNativeTarget "USScienceNewsFeed" */;
+			buildConfigurationList = 8DD5CA5A26CBB8D900D3FCFF /* Build configuration list for PBXNativeTarget "TopHeadlinesNewsFeed" */;
 			buildPhases = (
 				8DD5CA3F26CBB8D600D3FCFF /* Sources */,
 				8DD5CA4026CBB8D600D3FCFF /* Frameworks */,
@@ -165,12 +165,12 @@
 			);
 			dependencies = (
 			);
-			name = USScienceNewsFeed;
+			name = TopHeadlinesNewsFeed;
 			packageProductDependencies = (
 				8DD5CA6926CBC2AE00D3FCFF /* Gloss */,
 			);
 			productName = USScienceNewsFeed;
-			productReference = 8DD5CA4326CBB8D600D3FCFF /* USScienceNewsFeed.app */;
+			productReference = 8DD5CA4326CBB8D600D3FCFF /* TopHeadlinesNewsFeed.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -187,7 +187,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 8DD5CA3E26CBB8D600D3FCFF /* Build configuration list for PBXProject "USScienceNewsFeed" */;
+			buildConfigurationList = 8DD5CA3E26CBB8D600D3FCFF /* Build configuration list for PBXProject "TopHeadlinesNewsFeed" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -203,7 +203,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8DD5CA4226CBB8D600D3FCFF /* USScienceNewsFeed */,
+				8DD5CA4226CBB8D600D3FCFF /* TopHeadlinesNewsFeed */,
 			);
 		};
 /* End PBXProject section */
@@ -229,7 +229,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8DD5CA4B26CBB8D600D3FCFF /* ScienceNewsViewController.swift in Sources */,
+				8DD5CA4B26CBB8D600D3FCFF /* TopHeadlinesNewsFeedViewController.swift in Sources */,
 				8D5017AD26CCF1F4003A2252 /* WebViewController.swift in Sources */,
 				8DD5CA5126CBB8D600D3FCFF /* USScienceNewsFeed.xcdatamodeld in Sources */,
 				8D145E9B26CE3B38003FB969 /* AppearanceViewController.swift in Sources */,
@@ -422,7 +422,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		8DD5CA3E26CBB8D600D3FCFF /* Build configuration list for PBXProject "USScienceNewsFeed" */ = {
+		8DD5CA3E26CBB8D600D3FCFF /* Build configuration list for PBXProject "TopHeadlinesNewsFeed" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8DD5CA5826CBB8D900D3FCFF /* Debug */,
@@ -431,7 +431,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8DD5CA5A26CBB8D900D3FCFF /* Build configuration list for PBXNativeTarget "USScienceNewsFeed" */ = {
+		8DD5CA5A26CBB8D900D3FCFF /* Build configuration list for PBXNativeTarget "TopHeadlinesNewsFeed" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8DD5CA5B26CBB8D900D3FCFF /* Debug */,

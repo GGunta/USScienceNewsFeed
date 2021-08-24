@@ -3,7 +3,6 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
-        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -23,7 +22,7 @@
         <!--Appearance View Controller-->
         <scene sceneID="isz-gV-SEB">
             <objects>
-                <viewController id="TU4-UT-oaO" customClass="AppearanceViewController" customModule="USScienceNewsFeed" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="TU4-UT-oaO" customClass="AppearanceViewController" customModule="TopHeadlinesNewsFeed" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4V7-KX-Mml">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -42,7 +41,7 @@
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dHL-vW-qfg">
                                         <rect key="frame" x="0.0" y="179" width="288" height="61"/>
-                                        <color key="backgroundColor" red="0.084150861430000001" green="0.29064485169999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.17002628319999999" green="0.50384226649999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="288" id="E2k-UI-Y1g"/>
                                             <constraint firstAttribute="height" constant="61" id="RWx-HR-0Z6"/>
@@ -75,10 +74,10 @@
             </objects>
             <point key="canvasLocation" x="1553.6231884057972" y="-581.25"/>
         </scene>
-        <!--Science News View Controller-->
+        <!--Top Headlines News Feed View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ScienceNewsViewController" customModule="USScienceNewsFeed" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="TopHeadlinesNewsFeedViewController" customModule="TopHeadlinesNewsFeed" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -89,10 +88,10 @@
                                 <activityIndicatorView key="tableFooterView" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" id="d1W-p3-Dwc">
                                     <rect key="frame" x="0.0" y="230.00000034679067" width="414" height="59"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <color key="color" red="0.093979434397978512" green="0.17238955444663984" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="color" red="0.17002628319999999" green="0.50384226649999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </activityIndicatorView>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="scienceNewsFeed" rowHeight="181" id="aRa-v5-2G1" customClass="NewsTableViewCell" customModule="USScienceNewsFeed" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="scienceNewsFeed" rowHeight="181" id="aRa-v5-2G1" userLabel="TopHeadlinesNewsFeed" customClass="NewsTableViewCell" customModule="TopHeadlinesNewsFeed" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="24.5" width="414" height="181"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="aRa-v5-2G1" id="Oxj-FZ-eee">
@@ -109,7 +108,6 @@
                                                                 <constraint firstAttribute="height" constant="159" id="YsJ-hb-Ru8"/>
                                                             </constraints>
                                                             <fontDescription key="fontDescription" name="Karma-Medium" family="Karma" pointSize="17"/>
-                                                            <color key="textColor" red="0.049308687856700062" green="0.093317594378548474" blue="0.55165918094595678" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="s9b-il-sOi">
@@ -128,7 +126,7 @@
                                                 <constraint firstItem="wcB-Gm-ec4" firstAttribute="centerX" secondItem="Oxj-FZ-eee" secondAttribute="centerX" id="o01-JO-O55"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" red="0.86965308770596628" green="0.92573226822381749" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" systemColor="systemGray6Color"/>
                                         <connections>
                                             <outlet property="newsImageView" destination="s9b-il-sOi" id="nPn-mo-z03"/>
                                             <outlet property="newsTitleLabel" destination="Gyi-yd-wnd" id="s8o-Zw-Ibq"/>
@@ -153,20 +151,20 @@
                     <navigationItem key="navigationItem" id="wN7-48-vmg">
                         <leftBarButtonItems>
                             <barButtonItem image="info.circle.fill" catalog="system" id="F4i-8G-8r8">
-                                <color key="tintColor" red="0.093979434400000006" green="0.17238955440000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.17002628319999999" green="0.50384226649999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <action selector="infoBarItem:" destination="BYZ-38-t0r" id="xf1-Hm-SDg"/>
                                 </connections>
                             </barButtonItem>
                             <barButtonItem image="circle.lefthalf.fill" catalog="system" id="npo-SK-BvP">
-                                <color key="tintColor" red="0.093979434400000006" green="0.17238955440000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.17002628319999999" green="0.50384226649999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <segue destination="TU4-UT-oaO" kind="show" id="kk9-eI-NNX"/>
                                 </connections>
                             </barButtonItem>
                         </leftBarButtonItems>
                         <barButtonItem key="rightBarButtonItem" image="paperplane.fill" catalog="system" id="kir-cp-YPr">
-                            <color key="tintColor" red="0.093979434400000006" green="0.17238955440000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="tintColor" red="0.17002628319999999" green="0.50384226649999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <action selector="getDataTapped:" destination="BYZ-38-t0r" id="rNa-m6-r2T"/>
                             </connections>
@@ -184,7 +182,7 @@
         <!--Article Detail View Controller-->
         <scene sceneID="3TS-bk-s6V">
             <objects>
-                <viewController storyboardIdentifier="ArticleDetailViewController" hidesBottomBarWhenPushed="YES" id="5wE-2T-sm1" customClass="ArticleDetailViewController" customModule="USScienceNewsFeed" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ArticleDetailViewController" hidesBottomBarWhenPushed="YES" id="5wE-2T-sm1" customClass="ArticleDetailViewController" customModule="TopHeadlinesNewsFeed" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kwu-kV-Q9L">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -194,7 +192,7 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kba-BW-kN9">
                                         <rect key="frame" x="0.0" y="0.0" width="144" height="54"/>
-                                        <color key="backgroundColor" name="AccentColor"/>
+                                        <color key="backgroundColor" red="0.17002628319999999" green="0.50384226649999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="144" id="ecp-h9-v2o">
                                                 <variation key="heightClass=compact-widthClass=regular" constant="120"/>
@@ -211,7 +209,7 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a5A-hC-TL7">
                                         <rect key="frame" x="152" y="0.0" width="144" height="54"/>
-                                        <color key="backgroundColor" red="0.093979434400000006" green="0.17238955440000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.0" green="0.411597252556541" blue="0.79261693266249189" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="144" id="gx7-id-rN0">
                                                 <variation key="heightClass=compact-widthClass=regular" constant="120"/>
@@ -229,7 +227,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="YTZ-Wj-JA9">
-                                <rect key="frame" x="60" y="109" width="296" height="542"/>
+                                <rect key="frame" x="60" y="111" width="296" height="538"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8gG-TW-RGa">
                                         <rect key="frame" x="0.0" y="0.0" width="296" height="72"/>
@@ -243,9 +241,9 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2PL-Ng-uEU">
-                                        <rect key="frame" x="0.0" y="80" width="296" height="174"/>
+                                        <rect key="frame" x="0.0" y="80" width="296" height="150"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="174" id="IwO-Om-21J">
+                                            <constraint firstAttribute="height" constant="150" id="IwO-Om-21J">
                                                 <variation key="heightClass=compact-widthClass=regular" constant="110"/>
                                             </constraint>
                                             <constraint firstAttribute="width" constant="296" id="bgI-mi-cA7">
@@ -254,10 +252,10 @@
                                         </constraints>
                                     </imageView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Ste-Nk-Ihg">
-                                        <rect key="frame" x="0.0" y="262" width="296" height="280"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <rect key="frame" x="0.0" y="238" width="296" height="300"/>
+                                        <color key="backgroundColor" systemColor="systemGray6Color"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="280" id="Jzv-vH-fP9">
+                                            <constraint firstAttribute="height" constant="300" id="Jzv-vH-fP9">
                                                 <variation key="heightClass=compact-widthClass=regular" constant="140"/>
                                             </constraint>
                                             <constraint firstAttribute="width" constant="296" id="ko0-Ki-0dE">
@@ -270,6 +268,7 @@
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                 </subviews>
+                                <color key="backgroundColor" systemColor="systemGray6Color"/>
                                 <variation key="heightClass=compact-widthClass=regular" spacing="1"/>
                             </stackView>
                         </subviews>
@@ -344,18 +343,18 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Dv-qR-o6n" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2215.8482142857142" y="69.565217391304358"/>
+            <point key="canvasLocation" x="2214.4927536231885" y="68.973214285714278"/>
         </scene>
         <!--Web View Controller-->
         <scene sceneID="gen-u8-Lg8">
             <objects>
-                <viewController storyboardIdentifier="WebViewController" hidesBottomBarWhenPushed="YES" id="c8s-Rg-OGd" customClass="WebViewController" customModule="USScienceNewsFeed" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="WebViewController" hidesBottomBarWhenPushed="YES" id="c8s-Rg-OGd" customClass="WebViewController" customModule="TopHeadlinesNewsFeed" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4df-dY-UmC">
-                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WWK-DN-FrJ">
-                                <rect key="frame" x="44" y="-44" width="808" height="471"/>
+                                <rect key="frame" x="0.0" y="-44" width="414" height="886"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <wkWebViewConfiguration key="configuration">
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
@@ -381,24 +380,25 @@
             </objects>
             <point key="canvasLocation" x="2905.7971014492755" y="69.642857142857139"/>
         </scene>
-        <!--Science News-->
+        <!--Top Headlines-->
         <scene sceneID="wa8-P2-Ims">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" hidesBottomBarWhenPushed="YES" id="K64-YI-se8" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Science News" image="newspaper.fill" catalog="system" id="vPU-Xm-nAB">
-                        <color key="badgeColor" red="0.093979434400000006" green="0.17238955440000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <tabBarItem key="tabBarItem" title="Top Headlines" image="newspaper.fill" catalog="system" id="vPU-Xm-nAB" userLabel="Top Headlines">
+                        <color key="badgeColor" red="0.17002628319999999" green="0.50384226649999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBarItem>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="evz-sR-Q8J">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="evz-sR-Q8J">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.084150861430000001" green="0.29064485169999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
-                            <fontDescription key="fontDescription" name="Karma-Bold" family="Karma" pointSize="22"/>
-                            <color key="textColor" red="0.093979434400000006" green="0.17238955440000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" name="Karma-Bold" family="Karma" pointSize="24"/>
+                            <color key="textColor" red="0.0" green="0.41159725260000002" blue="0.7926169327" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </textAttributes>
                         <textAttributes key="largeTitleTextAttributes">
-                            <fontDescription key="fontDescription" name="Karma-Bold" family="Karma" pointSize="22"/>
-                            <color key="textColor" red="0.093979434400000006" green="0.17238955440000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" name="Karma-Bold" family="Karma" pointSize="24"/>
+                            <color key="textColor" red="0.17002628319999999" green="0.50384226649999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -419,7 +419,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="selectedImageTintColor" red="0.093979434400000006" green="0.17238955440000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="selectedImageTintColor" red="0.17002628319999999" green="0.50384226649999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="K64-YI-se8" kind="relationship" relationship="viewControllers" id="T5J-bs-CLR"/>
@@ -438,16 +438,17 @@
                         <color key="badgeColor" red="0.093979434400000006" green="0.17238955440000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBarItem>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="7r9-xG-7FG">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="7r9-xG-7FG">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.084150861430000001" green="0.29064485169999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
-                            <fontDescription key="fontDescription" name="Karma-SemiBold" family="Karma" pointSize="22"/>
-                            <color key="textColor" red="0.093979434400000006" green="0.17238955440000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" name="Karma-Bold" family="Karma" pointSize="24"/>
+                            <color key="textColor" red="0.0" green="0.41159725260000002" blue="0.7926169327" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </textAttributes>
                         <textAttributes key="largeTitleTextAttributes">
-                            <fontDescription key="fontDescription" name="Karma-SemiBold" family="Karma" pointSize="22"/>
-                            <color key="textColor" red="0.093979434400000006" green="0.17238955440000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" name="Karma-Bold" family="Karma" pointSize="24"/>
+                            <color key="textColor" red="0.17002628319999999" green="0.50384226649999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -462,14 +463,14 @@
         <!--Saved News Table View Controller-->
         <scene sceneID="vK9-lw-OzQ">
             <objects>
-                <tableViewController id="HZn-oH-1YZ" customClass="SavedNewsTableViewController" customModule="USScienceNewsFeed" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="HZn-oH-1YZ" customClass="SavedNewsTableViewController" customModule="TopHeadlinesNewsFeed" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="LyY-zO-shK">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.86965308770000005" green="0.92573226819999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <color key="separatorColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="savedFeedCell" rowHeight="188" id="CDG-Ak-C4S" customClass="NewsTableViewCell" customModule="USScienceNewsFeed" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="savedFeedCell" rowHeight="188" id="CDG-Ak-C4S" customClass="NewsTableViewCell" customModule="TopHeadlinesNewsFeed" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="24.5" width="414" height="188"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="CDG-Ak-C4S" id="ivs-GP-EBk">
@@ -486,7 +487,6 @@
                                                         <constraint firstAttribute="width" constant="247" id="rad-ss-MeD"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name="Karma-Medium" family="Karma" pointSize="17"/>
-                                                    <color key="textColor" red="0.049308687859999999" green="0.093317594379999994" blue="0.55165918089999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2uF-zT-3yq">
@@ -505,7 +505,7 @@
                                         <constraint firstItem="RZ8-GQ-xCQ" firstAttribute="centerY" secondItem="ivs-GP-EBk" secondAttribute="centerY" id="end-MR-YDx"/>
                                     </constraints>
                                 </tableViewCellContentView>
-                                <color key="backgroundColor" red="0.86965308770000005" green="0.92573226819999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" systemColor="systemGray6Color"/>
                                 <connections>
                                     <outlet property="newsImageView" destination="2uF-zT-3yq" id="WwH-Ci-Tia"/>
                                     <outlet property="newsTitleLabel" destination="MyY-KQ-zQG" id="F8W-yS-O5C"/>
@@ -519,13 +519,13 @@
                     </tableView>
                     <navigationItem key="navigationItem" id="2zv-jB-QV7">
                         <barButtonItem key="leftBarButtonItem" image="info.circle.fill" catalog="system" id="nHR-Zk-GYd">
-                            <color key="tintColor" red="0.093979434400000006" green="0.17238955440000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="tintColor" red="0.17002628319999999" green="0.50384226649999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <action selector="infoButtonTapped:" destination="HZn-oH-1YZ" id="6Kq-rD-jx9"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Edit" id="5TC-h8-EY6">
-                            <color key="tintColor" red="0.093979434400000006" green="0.17238955440000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="tintColor" red="0.17002628319999999" green="0.50384226649999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <action selector="editButtonTapped:" destination="HZn-oH-1YZ" id="Haf-VL-Xt0"/>
                             </connections>
@@ -546,14 +546,14 @@
         <image name="info.circle.fill" catalog="system" width="128" height="121"/>
         <image name="newspaper.fill" catalog="system" width="128" height="111"/>
         <image name="paperplane.fill" catalog="system" width="128" height="118"/>
-        <namedColor name="AccentColor">
-            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
