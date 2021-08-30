@@ -60,7 +60,7 @@ class SavedNewsTableViewController: UITableViewController {
     }
     
     @IBAction func infoButtonTapped(_ sender: Any) {
-        basicAlert(title: "Saved articles info", message: "All articles that you saved in Science News Feed can be found there")
+        basicAlert(title: "Saved articles info", message: "All articles that you saved in Top Headlines News Feed can be found there")
     }
     
     @IBAction func editButtonTapped(_ sender: Any) {

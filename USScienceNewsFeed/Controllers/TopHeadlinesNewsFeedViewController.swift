@@ -36,6 +36,7 @@ class TopHeadlinesNewsFeedViewController: UIViewController {
     
     @IBAction func infoBarItem(_ sender: Any) {
         basicAlert(title: "Top Headlines News Feed Info", message: "Press plane to fetch US Top Headlines News Feed articles")
+        #warning("add description of the app - what is it, what it does!!!")
     }
     
     @IBAction func getDataTapped(_ sender: Any) {
@@ -73,7 +74,6 @@ class TopHeadlinesNewsFeedViewController: UIViewController {
             }catch{
                 
             }
-            
         }
         task.resume()
         
