@@ -83,7 +83,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ZUE-9U-xbL">
-                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <rect key="frame" x="0.0" y="140" width="414" height="673"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <activityIndicatorView key="tableFooterView" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" id="d1W-p3-Dwc">
                                     <rect key="frame" x="0.0" y="230.00000034679067" width="414" height="59"/>
@@ -217,7 +217,7 @@
                                             <constraint firstAttribute="height" constant="54" id="wKT-iQ-wdf"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Karma-Bold" family="Karma" pointSize="17"/>
-                                        <state key="normal" title="Save">
+                                        <state key="normal" title="SAVE">
                                             <color key="titleColor" systemColor="labelColor"/>
                                         </state>
                                         <connections>
