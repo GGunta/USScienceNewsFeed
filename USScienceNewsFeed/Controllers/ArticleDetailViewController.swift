@@ -11,6 +11,7 @@ import CoreData
 
 class ArticleDetailViewController: UIViewController {
 
+    //variables used later to save the data to CoreData (local phone's storage)
     var savedItems = [Items]()
     var context: NSManagedObjectContext?
     
@@ -19,6 +20,7 @@ class ArticleDetailViewController: UIViewController {
     var contentString = String()
     var newsImage: UIImage?
     
+    //buttons/labels that can bee seen in simulator
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var newsImageView: UIImageView!
     @IBOutlet weak var contentTextView: UITextView!
@@ -41,6 +43,7 @@ class ArticleDetailViewController: UIViewController {
         context = appDelegate.persistentContainer.viewContext
     }
     
+    //basicAlert (UIAlert) customized as a message that article is saved to CoreData
     func saveData() {
         do{
             try context?.save()
@@ -50,7 +53,7 @@ class ArticleDetailViewController: UIViewController {
         }
     }
     
-    
+    //action for SAVE button. func allows to pass values to CoreData and SavedNewsTableViewController
     @IBAction func savedButtonTapped(_ sender: Any) {
         let newItem = Items(context: self.context!)
         newItem.newsTitle = titleString
@@ -69,7 +72,7 @@ class ArticleDetailViewController: UIViewController {
         saveData()
     }
     
-    
+    //passing the info through the storyboard to WebViewController
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let destination: WebViewController = segue.destination as! WebViewController
         

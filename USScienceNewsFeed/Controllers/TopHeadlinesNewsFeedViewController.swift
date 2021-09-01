@@ -34,9 +34,9 @@ class TopHeadlinesNewsFeedViewController: UIViewController {
         }
     }
     
+    //basicAlert (UIAlert) customized as a message about app and what to do to get news articles
     @IBAction func infoBarItem(_ sender: Any) {
-        basicAlert(title: "Top Headlines News Feed Info", message: "Press plane to fetch US Top Headlines News Feed articles")
-        #warning("add description of the app - what is it, what it does!!!")
+        basicAlert(title: "Top Headlines News Feed Info", message: "This app allows you to\n find and read today's news top headlines articles in US. \nPress paperplane button to fetch US Top Headlines News Feed articles")
     }
     
     @IBAction func getDataTapped(_ sender: Any) {
@@ -45,6 +45,7 @@ class TopHeadlinesNewsFeedViewController: UIViewController {
         
     }
     
+    //function where we get the data from newsapi.org via jsonurl API.
     func handleGetData(){
         let jsonUrl = "https://newsapi.org/v2/top-headlines?country=us&apiKey=b4987bb0a1f34bd7b684a8adbee1cb6a"
         
@@ -76,7 +77,6 @@ class TopHeadlinesNewsFeedViewController: UIViewController {
             }
         }
         task.resume()
-        
     }
     
     func poplateData(_ dict: [String: Any]){
@@ -96,13 +96,15 @@ class TopHeadlinesNewsFeedViewController: UIViewController {
 
 
 //MARK: - UITableViewDelegate, UITableViewDataSource
+//I'm using the extension for this TopHeadlinesNewsFeedViewController.This extension helps me to separate the class and extra code and makes code cleaner and more readable
 extension TopHeadlinesNewsFeedViewController: UITableViewDelegate, UITableViewDataSource{
     
-    
+    //
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return items.count
     }
     
+    //In storyboard there is only one cell. this func allows to reuse this cell depending on number of items that we get from newsapi.org. Fetched items will be presentend in NewsTableViewCell
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "scienceNewsFeed", for: indexPath) as? NewsTableViewCell else {
@@ -123,9 +125,10 @@ extension TopHeadlinesNewsFeedViewController: UITableViewDelegate, UITableViewDa
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 120
+        return 140
     }
     
+    //this func alows to select specific row and pass it's value through the storyboard to ArticleDetailViewController. I'm passing tilte, description, image and url
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)

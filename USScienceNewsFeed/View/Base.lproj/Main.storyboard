@@ -83,7 +83,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ZUE-9U-xbL">
-                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <rect key="frame" x="0.0" y="140" width="414" height="673"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <activityIndicatorView key="tableFooterView" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" id="d1W-p3-Dwc">
                                     <rect key="frame" x="0.0" y="230.00000034679067" width="414" height="59"/>
@@ -163,7 +163,7 @@
                                 </connections>
                             </barButtonItem>
                         </leftBarButtonItems>
-                        <barButtonItem key="rightBarButtonItem" image="paperplane.fill" catalog="system" id="kir-cp-YPr">
+                        <barButtonItem key="rightBarButtonItem" image="paperplane.circle.fill" catalog="system" id="kir-cp-YPr">
                             <color key="tintColor" red="0.17002628319999999" green="0.50384226649999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <action selector="getDataTapped:" destination="BYZ-38-t0r" id="rNa-m6-r2T"/>
@@ -187,19 +187,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="GQw-3E-YIF">
-                                <rect key="frame" x="60" y="701" width="296" height="54"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="GQw-3E-YIF">
+                                <rect key="frame" x="123" y="681" width="170" height="128"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kba-BW-kN9">
-                                        <rect key="frame" x="0.0" y="0.0" width="144" height="54"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="170" height="60"/>
                                         <color key="backgroundColor" red="0.17002628319999999" green="0.50384226649999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="144" id="ecp-h9-v2o">
-                                                <variation key="heightClass=compact-widthClass=regular" constant="120"/>
+                                                <variation key="heightClass=compact-widthClass=regular" constant="170"/>
+                                                <variation key="heightClass=regular-widthClass=compact" constant="170"/>
                                             </constraint>
-                                            <constraint firstAttribute="height" constant="54" id="fBm-Mb-o0W"/>
+                                            <constraint firstAttribute="height" constant="54" id="fBm-Mb-o0W">
+                                                <variation key="heightClass=compact-widthClass=regular" constant="60"/>
+                                                <variation key="heightClass=regular-widthClass=compact" constant="60"/>
+                                            </constraint>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="Karma-SemiBold" family="Karma" pointSize="16"/>
+                                        <fontDescription key="fontDescription" name="Karma-SemiBold" family="Karma" pointSize="17"/>
                                         <state key="normal" title="Read Full Article">
                                             <color key="titleColor" systemColor="labelColor"/>
                                         </state>
@@ -208,16 +212,20 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a5A-hC-TL7">
-                                        <rect key="frame" x="152" y="0.0" width="144" height="54"/>
-                                        <color key="backgroundColor" red="0.0" green="0.411597252556541" blue="0.79261693266249189" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <rect key="frame" x="0.0" y="68" width="170" height="60"/>
+                                        <color key="backgroundColor" red="0.0" green="0.36142559726715884" blue="0.6960008758859535" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="144" id="gx7-id-rN0">
-                                                <variation key="heightClass=compact-widthClass=regular" constant="120"/>
+                                                <variation key="heightClass=compact-widthClass=regular" constant="170"/>
+                                                <variation key="heightClass=regular-widthClass=compact" constant="170"/>
                                             </constraint>
-                                            <constraint firstAttribute="height" constant="54" id="wKT-iQ-wdf"/>
+                                            <constraint firstAttribute="height" constant="54" id="wKT-iQ-wdf">
+                                                <variation key="heightClass=compact-widthClass=regular" constant="60"/>
+                                                <variation key="heightClass=regular-widthClass=compact" constant="60"/>
+                                            </constraint>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="Karma-Bold" family="Karma" pointSize="17"/>
-                                        <state key="normal" title="SAVE">
+                                        <fontDescription key="fontDescription" name="Karma-Bold" family="Karma" pointSize="18"/>
+                                        <state key="normal" title="Save the article">
                                             <color key="titleColor" systemColor="labelColor"/>
                                         </state>
                                         <connections>
@@ -277,16 +285,20 @@
                         <constraints>
                             <constraint firstItem="YTZ-Wj-JA9" firstAttribute="top" relation="greaterThanOrEqual" secondItem="hsT-8D-rFb" secondAttribute="top" constant="45" id="6IZ-fj-ae9"/>
                             <constraint firstItem="GQw-3E-YIF" firstAttribute="centerY" secondItem="kwu-kV-Q9L" secondAttribute="centerY" id="7xQ-Hr-hgG">
-                                <variation key="heightClass=regular-widthClass=compact" constant="280"/>
+                                <variation key="heightClass=regular-widthClass=compact" constant="297"/>
                             </constraint>
                             <constraint firstItem="GQw-3E-YIF" firstAttribute="top" secondItem="YTZ-Wj-JA9" secondAttribute="bottom" constant="369" id="9oX-pX-B9J"/>
-                            <constraint firstAttribute="trailing" secondItem="YTZ-Wj-JA9" secondAttribute="trailing" constant="336" id="E1D-PH-4c1"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="YTZ-Wj-JA9" secondAttribute="trailing" constant="300" id="E1D-PH-4c1"/>
                             <constraint firstItem="YTZ-Wj-JA9" firstAttribute="centerX" secondItem="kwu-kV-Q9L" secondAttribute="centerX" id="Ms8-lx-LcV">
                                 <variation key="heightClass=regular-widthClass=compact" constant="1"/>
                             </constraint>
-                            <constraint firstItem="GQw-3E-YIF" firstAttribute="leading" secondItem="YTZ-Wj-JA9" secondAttribute="trailing" constant="40" id="ZLU-ci-Cpo"/>
+                            <constraint firstItem="GQw-3E-YIF" firstAttribute="leading" secondItem="YTZ-Wj-JA9" secondAttribute="trailing" constant="80" id="ZLU-ci-Cpo">
+                                <variation key="heightClass=compact-widthClass=regular" constant="65"/>
+                            </constraint>
                             <constraint firstItem="YTZ-Wj-JA9" firstAttribute="top" relation="greaterThanOrEqual" secondItem="hsT-8D-rFb" secondAttribute="top" constant="65" id="c22-eH-wI1"/>
-                            <constraint firstItem="YTZ-Wj-JA9" firstAttribute="leading" secondItem="kwu-kV-Q9L" secondAttribute="leadingMargin" id="cAf-PU-4tB"/>
+                            <constraint firstItem="YTZ-Wj-JA9" firstAttribute="leading" secondItem="kwu-kV-Q9L" secondAttribute="leadingMargin" id="cAf-PU-4tB">
+                                <variation key="heightClass=compact-widthClass=regular" constant="31"/>
+                            </constraint>
                             <constraint firstItem="YTZ-Wj-JA9" firstAttribute="centerY" secondItem="kwu-kV-Q9L" secondAttribute="centerY" id="chf-yK-Exf">
                                 <variation key="heightClass=regular-widthClass=compact" constant="-68"/>
                             </constraint>
@@ -343,7 +355,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Dv-qR-o6n" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2214.4927536231885" y="68.973214285714278"/>
+            <point key="canvasLocation" x="2213.8392857142858" y="68.115942028985515"/>
         </scene>
         <!--Web View Controller-->
         <scene sceneID="gen-u8-Lg8">
@@ -391,7 +403,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="evz-sR-Q8J">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="tintColor" red="0.084150861430000001" green="0.29064485169999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="0.13638961320000001" green="0.48686403039999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <fontDescription key="fontDescription" name="Karma-Bold" family="Karma" pointSize="24"/>
                             <color key="textColor" red="0.0" green="0.41159725260000002" blue="0.7926169327" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -441,7 +453,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="7r9-xG-7FG">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="tintColor" red="0.084150861430000001" green="0.29064485169999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="0.13581928609999999" green="0.49555355309999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <fontDescription key="fontDescription" name="Karma-Bold" family="Karma" pointSize="24"/>
                             <color key="textColor" red="0.0" green="0.41159725260000002" blue="0.7926169327" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -545,7 +557,7 @@
         <image name="folder.fill" catalog="system" width="128" height="97"/>
         <image name="info.circle.fill" catalog="system" width="128" height="121"/>
         <image name="newspaper.fill" catalog="system" width="128" height="111"/>
-        <image name="paperplane.fill" catalog="system" width="128" height="118"/>
+        <image name="paperplane.circle.fill" catalog="system" width="128" height="121"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
