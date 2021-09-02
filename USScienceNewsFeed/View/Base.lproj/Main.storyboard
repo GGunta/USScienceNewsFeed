@@ -166,7 +166,7 @@
                                     <action selector="infoBarItem:" destination="BYZ-38-t0r" id="xf1-Hm-SDg"/>
                                 </connections>
                             </barButtonItem>
-                            <barButtonItem image="circle.lefthalf.fill" catalog="system" id="npo-SK-BvP">
+                            <barButtonItem image="circle.righthalf.fill" catalog="system" id="npo-SK-BvP">
                                 <color key="tintColor" red="0.17002628319999999" green="0.50384226649999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <segue destination="TU4-UT-oaO" kind="show" id="kk9-eI-NNX"/>
@@ -596,7 +596,7 @@
         </designable>
     </designables>
     <resources>
-        <image name="circle.lefthalf.fill" catalog="system" width="128" height="121"/>
+        <image name="circle.righthalf.fill" catalog="system" width="128" height="121"/>
         <image name="folder.fill" catalog="system" width="128" height="97"/>
         <image name="info.circle.fill" catalog="system" width="128" height="121"/>
         <image name="newspaper.fill" catalog="system" width="128" height="111"/>
