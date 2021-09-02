@@ -36,7 +36,7 @@ class TopHeadlinesNewsFeedViewController: UIViewController {
     
     //basicAlert (UIAlert) customized as a message about app and what to do to get news articles
     @IBAction func infoBarItem(_ sender: Any) {
-        basicAlert(title: "US Top News Feed Info", message: "This app allows you to\n find and read today's news top headlines articles in US. \nPress paperplane button to fetch US Top News Feed articles")
+        basicAlert(title: "US Top News Feed Info", message: "🔹 This app allows you to\n find and read today's news top headlines articles in US. \n🔹 Press 🌓 button \nto go to phone settings. \n🔹 Press ✈️  button to fetch US Top News Feed articles")
     }
     
     @IBAction func getDataTapped(_ sender: Any) {
