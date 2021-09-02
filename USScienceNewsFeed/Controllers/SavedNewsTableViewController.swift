@@ -65,7 +65,7 @@ class SavedNewsTableViewController: UITableViewController {
     
     //basicAlert (UIAlert) customized as a info button message where to find all saved articles
     @IBAction func infoButtonTapped(_ sender: Any) {
-        basicAlert(title: "Saved articles info", message: "All articles that you saved in Top Headlines News Feed can be found there")
+        basicAlert(title: "Saved articles info", message: "All articles that you saved in US Top News Feed can be found there")
     }
     
     //func alows to edit saved articles: reorganize, delete

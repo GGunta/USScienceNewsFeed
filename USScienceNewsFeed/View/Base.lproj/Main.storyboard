@@ -39,7 +39,7 @@
                                         <fontDescription key="fontDescription" name="Karma-SemiBold" family="Karma" pointSize="18"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dHL-vW-qfg">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dHL-vW-qfg" customClass="DesignButton" customModule="TopHeadlinesNewsFeed" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="179" width="288" height="61"/>
                                         <color key="backgroundColor" red="0.17002628319999999" green="0.50384226649999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
@@ -50,6 +50,17 @@
                                         <state key="normal" title="Open Settings">
                                             <color key="titleColor" systemColor="labelColor"/>
                                         </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.0" green="0.41159725260000002" blue="0.7926169327" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="openSettingsTapped:" destination="TU4-UT-oaO" eventType="touchUpInside" id="Kba-Ik-VV3"/>
                                         </connections>
@@ -83,7 +94,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ZUE-9U-xbL">
-                                <rect key="frame" x="0.0" y="140" width="414" height="673"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <activityIndicatorView key="tableFooterView" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" id="d1W-p3-Dwc">
                                     <rect key="frame" x="0.0" y="230.00000034679067" width="414" height="59"/>
@@ -99,10 +110,10 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="wcB-Gm-ec4">
-                                                    <rect key="frame" x="30" y="11" width="354" height="159"/>
+                                                    <rect key="frame" x="10.5" y="11" width="393" height="159"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gyi-yd-wnd">
-                                                            <rect key="frame" x="0.0" y="0.0" width="208" height="159"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="247" height="159"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="247" id="8Cf-e1-WXU"/>
                                                                 <constraint firstAttribute="height" constant="159" id="YsJ-hb-Ru8"/>
@@ -111,7 +122,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="s9b-il-sOi">
-                                                            <rect key="frame" x="216" y="0.0" width="138" height="159"/>
+                                                            <rect key="frame" x="255" y="0.0" width="138" height="159"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="138" id="Mdr-hu-5eP"/>
                                                                 <constraint firstAttribute="height" constant="159" id="jD7-CZ-Nlo"/>
@@ -122,7 +133,6 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="wcB-Gm-ec4" firstAttribute="centerY" secondItem="Oxj-FZ-eee" secondAttribute="centerY" id="Exk-uP-CN0"/>
-                                                <constraint firstItem="wcB-Gm-ec4" firstAttribute="leading" secondItem="Oxj-FZ-eee" secondAttribute="leadingMargin" constant="10" id="GJZ-GZ-aG4"/>
                                                 <constraint firstItem="wcB-Gm-ec4" firstAttribute="centerX" secondItem="Oxj-FZ-eee" secondAttribute="centerX" id="o01-JO-O55"/>
                                             </constraints>
                                         </tableViewCellContentView>
@@ -190,7 +200,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="GQw-3E-YIF">
                                 <rect key="frame" x="123" y="681" width="170" height="128"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kba-BW-kN9">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kba-BW-kN9" customClass="DesignButton" customModule="TopHeadlinesNewsFeed" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="170" height="60"/>
                                         <color key="backgroundColor" red="0.17002628319999999" green="0.50384226649999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
@@ -207,11 +217,22 @@
                                         <state key="normal" title="Read Full Article">
                                             <color key="titleColor" systemColor="labelColor"/>
                                         </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.13638961320000001" green="0.48686403039999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <segue destination="c8s-Rg-OGd" kind="show" id="81K-jS-jfq"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a5A-hC-TL7">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a5A-hC-TL7" customClass="DesignButton" customModule="TopHeadlinesNewsFeed" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="68" width="170" height="60"/>
                                         <color key="backgroundColor" red="0.0" green="0.36142559726715884" blue="0.6960008758859535" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
@@ -225,9 +246,20 @@
                                             </constraint>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Karma-Bold" family="Karma" pointSize="18"/>
-                                        <state key="normal" title="Save the article">
+                                        <state key="normal" title="Save Article">
                                             <color key="titleColor" systemColor="labelColor"/>
                                         </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.027164480210000001" green="0.2866734131" blue="0.60689733450000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="savedButtonTapped:" destination="5wE-2T-sm1" eventType="touchUpInside" id="5zZ-IX-zgZ"/>
                                         </connections>
@@ -406,11 +438,11 @@
                         <color key="tintColor" red="0.13638961320000001" green="0.48686403039999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <fontDescription key="fontDescription" name="Karma-Bold" family="Karma" pointSize="24"/>
-                            <color key="textColor" red="0.0" green="0.41159725260000002" blue="0.7926169327" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="textColor" red="0.13638961320000001" green="0.48686403039999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </textAttributes>
                         <textAttributes key="largeTitleTextAttributes">
                             <fontDescription key="fontDescription" name="Karma-Bold" family="Karma" pointSize="24"/>
-                            <color key="textColor" red="0.17002628319999999" green="0.50384226649999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="textColor" red="0.13638961320000001" green="0.48686403039999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -456,11 +488,11 @@
                         <color key="tintColor" red="0.13581928609999999" green="0.49555355309999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <fontDescription key="fontDescription" name="Karma-Bold" family="Karma" pointSize="24"/>
-                            <color key="textColor" red="0.0" green="0.41159725260000002" blue="0.7926169327" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="textColor" red="0.13638961320000001" green="0.48686403039999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </textAttributes>
                         <textAttributes key="largeTitleTextAttributes">
                             <fontDescription key="fontDescription" name="Karma-Bold" family="Karma" pointSize="24"/>
-                            <color key="textColor" red="0.17002628319999999" green="0.50384226649999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="textColor" red="0.13638961320000001" green="0.48686403039999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -537,7 +569,7 @@
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Edit" id="5TC-h8-EY6">
-                            <color key="tintColor" red="0.17002628319999999" green="0.50384226649999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="tintColor" red="0.13638961320000001" green="0.48686403039999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <action selector="editButtonTapped:" destination="HZn-oH-1YZ" id="Haf-VL-Xt0"/>
                             </connections>
@@ -552,6 +584,17 @@
             <point key="canvasLocation" x="1553.6231884057972" y="721.875"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="Kba-BW-kN9">
+            <size key="intrinsicContentSize" width="127" height="39"/>
+        </designable>
+        <designable name="a5A-hC-TL7">
+            <size key="intrinsicContentSize" width="99" height="42"/>
+        </designable>
+        <designable name="dHL-vW-qfg">
+            <size key="intrinsicContentSize" width="103" height="39"/>
+        </designable>
+    </designables>
     <resources>
         <image name="circle.lefthalf.fill" catalog="system" width="128" height="121"/>
         <image name="folder.fill" catalog="system" width="128" height="97"/>

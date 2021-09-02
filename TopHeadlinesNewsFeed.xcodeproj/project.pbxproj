@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		8D145E9B26CE3B38003FB969 /* AppearanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D145E9A26CE3B38003FB969 /* AppearanceViewController.swift */; };
+		8D4E0E7626DFD967002D0E09 /* BounceButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4E0E7526DFD967002D0E09 /* BounceButton.swift */; };
+		8D4E0E7826DFDA28002D0E09 /* DesignButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4E0E7726DFDA28002D0E09 /* DesignButton.swift */; };
 		8D5017AB26CCE914003A2252 /* ArticleDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5017AA26CCE914003A2252 /* ArticleDetailViewController.swift */; };
 		8D5017AD26CCF1F4003A2252 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5017AC26CCF1F4003A2252 /* WebViewController.swift */; };
 		8D5017AF26CCF895003A2252 /* SavedNewsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5017AE26CCF895003A2252 /* SavedNewsTableViewController.swift */; };
@@ -29,6 +31,8 @@
 
 /* Begin PBXFileReference section */
 		8D145E9A26CE3B38003FB969 /* AppearanceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppearanceViewController.swift; sourceTree = "<group>"; };
+		8D4E0E7526DFD967002D0E09 /* BounceButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BounceButton.swift; sourceTree = "<group>"; };
+		8D4E0E7726DFDA28002D0E09 /* DesignButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignButton.swift; sourceTree = "<group>"; };
 		8D5017AA26CCE914003A2252 /* ArticleDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDetailViewController.swift; sourceTree = "<group>"; };
 		8D5017AC26CCF1F4003A2252 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		8D5017AE26CCF895003A2252 /* SavedNewsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedNewsTableViewController.swift; sourceTree = "<group>"; };
@@ -146,6 +150,8 @@
 				8DD5CA7426CBD79500D3FCFF /* Karma-Medium.ttf */,
 				8DD5CA7226CBD78D00D3FCFF /* Karma-Bold.ttf */,
 				8DD5CA7026CBD77D00D3FCFF /* Karma-SemiBold.ttf */,
+				8D4E0E7526DFD967002D0E09 /* BounceButton.swift */,
+				8D4E0E7726DFDA28002D0E09 /* DesignButton.swift */,
 			);
 			name = ExtraResources;
 			sourceTree = "<group>";
@@ -231,9 +237,11 @@
 			files = (
 				8DD5CA4B26CBB8D600D3FCFF /* TopHeadlinesNewsFeedViewController.swift in Sources */,
 				8D5017AD26CCF1F4003A2252 /* WebViewController.swift in Sources */,
+				8D4E0E7826DFDA28002D0E09 /* DesignButton.swift in Sources */,
 				8DD5CA5126CBB8D600D3FCFF /* USScienceNewsFeed.xcdatamodeld in Sources */,
 				8D145E9B26CE3B38003FB969 /* AppearanceViewController.swift in Sources */,
 				8DD5CA6526CBBF4400D3FCFF /* NewsTableViewCell.swift in Sources */,
+				8D4E0E7626DFD967002D0E09 /* BounceButton.swift in Sources */,
 				8D5017AF26CCF895003A2252 /* SavedNewsTableViewController.swift in Sources */,
 				8DD5CA4726CBB8D600D3FCFF /* AppDelegate.swift in Sources */,
 				8DD5CA6726CBC24900D3FCFF /* Item.swift in Sources */,

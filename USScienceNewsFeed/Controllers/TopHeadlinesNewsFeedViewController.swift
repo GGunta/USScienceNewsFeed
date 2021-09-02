@@ -18,7 +18,7 @@ class TopHeadlinesNewsFeedViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "Top Headlines News Feed"
+        self.title = "US Top News"
         activityIndicatorView.isHidden = true
     }
     
@@ -36,7 +36,7 @@ class TopHeadlinesNewsFeedViewController: UIViewController {
     
     //basicAlert (UIAlert) customized as a message about app and what to do to get news articles
     @IBAction func infoBarItem(_ sender: Any) {
-        basicAlert(title: "Top Headlines News Feed Info", message: "This app allows you to\n find and read today's news top headlines articles in US. \nPress paperplane button to fetch US Top Headlines News Feed articles")
+        basicAlert(title: "US Top News Feed Info", message: "This app allows you to\n find and read today's news top headlines articles in US. \nPress paperplane button to fetch US Top News Feed articles")
     }
     
     @IBAction func getDataTapped(_ sender: Any) {
@@ -119,7 +119,7 @@ extension TopHeadlinesNewsFeedViewController: UITableViewDelegate, UITableViewDa
             cell.newsImageView.image = image
         }
         let date = String(item.publishedAt.prefix(10))
-        self.title = "Top News Headlines in US \(date)"
+        self.title = "US Top News \(date)"
         
         return cell
     }
