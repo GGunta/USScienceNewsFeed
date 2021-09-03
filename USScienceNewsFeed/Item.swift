@@ -8,7 +8,7 @@
 import UIKit
 import Gloss
 
-//based on the JSON which is what the API is giving to me, I can take specific key: description, title, image etc.
+//based on the JSON which is what the API is giving to me, I can take specific key (description, title, image etc.) and use it to display in my app
 class Item: JSONDecodable {
     
     var description: String
